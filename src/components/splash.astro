@@ -2,6 +2,8 @@
 import { Picture } from "@astrojs/image/components";
 import { Icon } from "astro-icon";
 import astronautImage from "~/assets/astronaut.png";
+import devImage from "~/assets/undraw-dev-2.svg";
+import logoImage from "~/assets/pcs-logo-small.png";
 import HeroImage from "~/components/hero-image.astro";
 import Starfield from "~/components/starfield.astro";
 import GitHubCorner from "./github-corner.astro";
@@ -20,13 +22,22 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     <h2
       class="flex flex-col gap-2 self-end sm:gap-4 sm:self-auto sm:justify-self-end"
     >
-      <Icon name="logomark" class="h-24 text-white md:h-32" />
+      <!-- <Icon name="logomark" class="h-24 text-white md:h-32" /> -->
+      <div class="flex justify-center">
+        <Picture
+          class="h-48 text-white md:h-48 "
+          src={logoImage}
+          widths={widths}
+          sizes={sizes}
+          loading="eager"
+          alt="A floating astronaut in a space suit"
+        />
+      </div>
       <div
         class="gradient-text text-center font-extrabold tracking-tighter text-8xl"
       >
-        Build fast
-        <br /> websites,
-        <br /> faster.
+        EMPOWERED  <br/>
+        ANALYTICS
       </div>
     </h2>
     <div
@@ -35,9 +46,9 @@ const sizes = "(min-width: 640px) 42vw, 67vw";
     >
       <Picture
         class="object-cover w-full h-full"
-        src={astronautImage}
+        src={devImage}
         widths={widths}
-        sizes={sizes}
+        aspectRatio={4/3}
         loading="eager"
         alt="A floating astronaut in a space suit"
       />
