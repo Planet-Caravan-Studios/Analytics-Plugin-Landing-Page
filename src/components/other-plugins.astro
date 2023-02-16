@@ -1,0 +1,53 @@
+---
+import CompatibilityList from "~/components/compatibility-list.astro";
+import ContentSection from "~/components/content-section.astro";
+import type { CompatibilityItem } from "~/types";
+
+const plugins: Array<CompatibilityItem> = [
+  {
+    title: "Analytics",
+    icon: "ic:baseline-analytics",
+    url: "https://reactjs.org/",
+  },
+  {
+    title: "SEO",
+    icon: "ion:analytics-outline",
+    url: "https://preactjs.com/",
+  },
+  {
+    title: "Accessibility",
+    icon: "ion:accessibility",
+    url: "https://svelte.dev/",
+  },
+  {
+    title: "Site Templates",
+    icon: "ic:baseline-code",
+    url: "https://vuejs.org/",
+  },
+  {
+    title: "GitHub",
+    icon: "mdi:github",
+    url: "https://svelte.dev/",
+  },
+  {
+    title: "Dev Guide",
+    icon: "ic:baseline-logo-dev",
+    url: "https://vuejs.org/",
+  },
+];
+
+---
+
+<ContentSection title="Our Tools" id="plugins">
+  <Fragment slot="lead">
+    <span class="text-primary">Planet Caravan Studios</span> 
+    is all about making powerful yet easy to use code.  
+    Our tools are free to use, and we encourage collaboration across the industry.
+  </Fragment>
+  <CompatibilityList
+    items={plugins}
+    title="Tools"
+    url=""
+  />
+</ContentSection>
+
