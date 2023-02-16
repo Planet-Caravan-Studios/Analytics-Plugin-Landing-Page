@@ -6,32 +6,32 @@ import type { CompatibilityItem } from "~/types";
 const plugins: Array<CompatibilityItem> = [
   {
     title: "Analytics",
-    icon: "frameworks/react",
+    icon: "ic:baseline-analytics",
     url: "https://reactjs.org/",
   },
   {
     title: "SEO",
-    icon: "mdi:wordpress",
+    icon: "ion:analytics-outline",
     url: "https://preactjs.com/",
   },
   {
     title: "Accessibility",
-    icon: "jam:squarespace",
+    icon: "ion:accessibility",
     url: "https://svelte.dev/",
   },
   {
     title: "Site Templates",
-    icon: "jam:shopify",
+    icon: "ic:baseline-code",
     url: "https://vuejs.org/",
   },
   {
-    title: "Accessibility",
-    icon: "jam:squarespace",
+    title: "GitHub",
+    icon: "mdi:github",
     url: "https://svelte.dev/",
   },
   {
-    title: "Site Templates",
-    icon: "jam:shopify",
+    title: "Dev Guide",
+    icon: "ic:baseline-logo-dev",
     url: "https://vuejs.org/",
   },
 ];
@@ -42,11 +42,12 @@ const plugins: Array<CompatibilityItem> = [
   <Fragment slot="lead">
     <span class="text-primary">Planet Caravan Studios</span> 
     is all about making powerful yet easy to use code.  
-    Our tools are free to use and we encourage collaboration across the industry.
+    Our tools are free to use, and we encourage collaboration across the industry.
   </Fragment>
   <CompatibilityList
     items={plugins}
-    title="Frameworks"
+    title="Tools"
     url=""
   />
 </ContentSection>
+
